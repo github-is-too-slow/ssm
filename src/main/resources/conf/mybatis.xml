@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--控制MyBatis全局行为-->
+    <!--<settings>-->
+        <!--&lt;!&ndash;输出日志信息到控制台&ndash;&gt;-->
+        <!--<setting name="logImpl" value="STDOUT_LOGGING"/>-->
+    <!--</settings>-->
+
+    <!--配置全限定名称的别名-->
+    <typeAliases>
+        <package name="com.billion.entity"/>
+    </typeAliases>
+
+    <!--指定SQL映射文件-->
+    <mappers>
+        <package name="com.billion.dao"/>
+    </mappers>
+</configuration>
